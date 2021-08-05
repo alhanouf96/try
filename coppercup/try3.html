@@ -1,0 +1,1877 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<title>try3</title>
+
+
+<link rel="stylesheet" href="font/flaticon.css"> 
+
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3pro.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3pro.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3pro.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+<style>
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.main {
+  padding: 16px;
+  margin-top: 30px;
+  height: 1500px; /* Used in this example to enable scrolling */
+}
+
+
+
+h5{
+
+color: #3f3534;
+  text-align:right;
+   font-weight: bold;
+   padding-top: 1px;
+
+   font-size: 16px;
+}
+
+
+p{
+text-align:right;
+
+
+
+
+}
+
+img { 
+  width: 100%; 
+
+}
+
+.mobile-container {
+  max-width: 480px;
+  margin: auto;
+  color: black;
+  border-radius: 10px;
+
+}
+
+.container{
+
+
+  padding: 7px;
+}
+
+
+
+.nav {
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
+  top:143px;
+  float: right;
+  background: white;
+
+
+border-radius: 0;
+border-bottom-right-radius: 4px;
+border-bottom-left-radius: 4px;
+
+
+      padding-bottom: 0px;
+
+}
+
+.nav a {
+
+  color: white;
+  text-align: center;
+  text-decoration: none;
+   font-size: 12px;
+  white-space: nowrap;
+
+  font-weight: bold;
+
+  padding: 0px;
+  padding-left:1px;
+  padding-right: 1px;
+ 
+}
+
+
+
+
+/*-- 
+.nav a:hover {
+  background: #d2612a; /*-- orange 
+  color: black;
+} */
+
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+    color: #white;
+    background-color: #3f3534;
+
+    border-radius: 16px;
+}
+
+.nav-pills .nav-link:not(.active) {
+       color: #white;
+
+
+ 
+   background:#3f3534;
+   opacity: 0.5;
+    border-radius: 16px;
+
+}
+
+
+/*-- scroll nav pills */
+
+.singledowre {
+    background-color: transparent;
+    min-height: 100%;
+    padding: 40px 14px;
+
+
+ 
+}
+
+.singledowrediv {
+    display: table;
+    margin: 0 auto;
+    max-width: 950px;
+
+         padding-bottom: 0px;
+}
+
+.singleinfos {
+   background: white;
+    padding: 0;
+
+    margin: 15px 0;
+
+}
+.container-fluid {
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+
+
+}
+.singleinfos .singleinfostabs {
+    margin-bottom: 20px;
+  width: 100%;
+
+  
+}
+.singleinfos .singleinfostabs > ul {
+     overflow-x: auto;
+   overflow-y:hidden;
+   flex-wrap: nowrap;
+    margin-bottom: 14px;
+ padding:-10px;
+
+}
+.singleinfos .singleinfostabs > ul > li {
+   /* background: white;  color of pills */
+  /*  background:#3f3534; color of pills */
+   border-radius: 16px;
+
+    margin-left: 10px;
+    margin-right: 0;
+    margin-bottom: 20px;
+
+  
+}
+.singleinfos .singleinfostabs .nav-pills > li > a {
+    font-size: 10px;
+
+    border-radius: 16px;
+
+    padding: 4px 10px;
+    text-align: center;
+   /* background: transparent;
+   /* color:#3f3534 !important;   /*color of pills */
+  white-space: nowrap !important;
+
+
+    padding: 0px;
+  padding-left:1px;
+  padding-right: 2px;
+
+}
+
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.example::-webkit-scrollbar {
+    display: none;
+
+
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.example {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+
+
+ 
+}
+
+
+
+.icon {
+  position: relative;
+  /* Adjust these values accordingly */
+     display: inline-flex;
+    vertical-align: middle;
+
+}
+
+/* price & kcal*/
+
+
+.alignleft {
+  float: left;
+
+  color:#d2612a;
+   white-space: nowrap;
+
+
+}
+.alignright {
+  float: right;
+
+  color:#d2612a;
+}
+
+
+.icons{
+ color:#d2612a;
+float: left;
+
+
+}
+
+
+
+.card{
+border: none;
+
+
+
+
+} 
+
+
+.img-fluid {
+  border-radius: 4px;
+
+
+border-bottom-left-radius: 0px;
+border-top-left-radius: 0px;
+}
+
+
+.no-underline:hover {
+    text-decoration: none;
+}
+
+
+/* reszie  img*/
+.scal3{
+
+width: 120px;
+
+
+
+}
+
+
+</style>
+
+<script>
+    $(window).scroll(function(){
+        var scroll = $(window).scrollTop();
+       if(scroll < 25){
+        $('.fixed-top').css('top', '143px');
+  
+
+    } else{
+        $('.fixed-top').css('top', '0');
+    }
+    });
+
+
+    $(window).scroll(function(){
+        var scrol2 = $(window).scrollTop();
+       if(scrol2 < 10){
+  
+        $('.singleinfos .singleinfostabs>ul').css('padding', '0');
+
+    } 
+    });
+ 
+
+
+</script>
+
+
+
+
+
+
+
+
+</head>
+
+<script>
+	//if condithon or switch
+
+function gofor(id) {
+
+switch(id){
+
+  case "kin":
+var val = "hi"
+localStorage.setItem("storageName",val);
+window.location.href = "deet.html";
+ break;
+
+case "vi":
+var val = "vii"
+localStorage.setItem("storageName",val);
+window.location.href = "deet.html";
+ break;
+
+
+
+
+}
+
+
+}
+
+
+
+</script>
+
+
+
+<body dir="rtl">
+
+<div class="mobile-container ">
+
+
+<!-- need ta3dell in css -->
+
+  <img src="css/images/logo23.jpg" alt="">
+
+
+
+
+ <!--Navigation-->
+
+
+
+<div class="singleinfos">
+  <div class="row container-fluid ">
+    <div class="singleinfostabs ">
+
+<ul class="nav nav-pills red mb-3 fixed-top mobile-container example" id="pills-tab" role="tablist">
+
+
+
+  <li class="nav-item ">
+    <a class=" nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">قهوة مقطرة <i class="flaticon-drip-glass"></i></a></li>
+
+  <li class="nav-item">
+    <a class="nav-link " id="pills-contact-tab" data-toggle="pill" href="#pills-hotCoffee" role="tab" aria-controls="pills-contact" aria-selected="false">قهوة ساخنة <i class="flaticon-coffee-cup"></i></a></li>
+  </li>
+
+
+
+  <li class="nav-item">
+    <a class="nav-link " id="pills-contact-tab" data-toggle="pill" href="#pills-IceCoffee" role="tab" aria-controls="pills-contact" aria-selected="false">قهوة باردة <i class="flaticon-cold-coffee"></i></a></li>
+  </li>
+
+
+ <li class="nav-item">
+    <a class="nav-link " id="pills-contact-tab" data-toggle="pill" href="#pills-Tea" role="tab" aria-controls="pills-contact" aria-selected="false">شاي <i class="flaticon-tea-cup"></i></a></li>
+  </li>
+
+
+ <li class="nav-item">
+    <a class="nav-link " id="pills-contact-tab" data-toggle="pill" href="#pills-sweet" role="tab" aria-controls="pills-contact" aria-selected="false">جارز تشيز كيك <i class="flaticon-cake-1"></i></a></li>
+  </li>
+
+
+ <li class="nav-item">
+    <a class="nav-link " id="pills-contact-tab" data-toggle="pill" href="#pills-coc" role="tab" aria-controls="pills-contact" aria-selected="false">كوكيز <i class="flaticon-cookie"></i></a></li>
+  </li>
+
+
+  <li class="nav-item">
+    <a class="nav-link " id="pills-contact-tab" data-toggle="pill" href="#pills-carson" role="tab" aria-controls="pills-contact" aria-selected="false">كروسان <i class="flaticon-croissant"></i></a></li>
+  </li>
+
+
+
+
+
+</ul>
+
+</div></div></div>
+
+
+
+<br>
+
+
+
+<!--start content-->
+<div class="tab-content" id="pills-tabContent">
+
+
+ <!--start drip--> 
+
+  <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+
+<div class="container">
+
+   
+  <div class="card" onclick="gofor(this.id)" id="kin">
+
+
+
+
+        <div class="row no-gutters">
+            <div class="col-auto scal3">
+                <img src="css/images/drip/kinto.jpg" class="img-fluid" alt="">
+            </div>
+
+            <div class="col">
+                <div class="card-block px-3">
+                    <h5 class="card-title">كينتو</h5>
+
+                   <div id="textbox">
+                     <p class="alignleft"><i class="flaticon-calorie"></i>7</p>
+                     <p class="alignright"><i class="flaticon-riyal"></i>15.00</i></p>
+                         </div>
+
+
+             </div><!--close block-->
+            </div><!--close col-->
+        </div><!--close row-->
+</a>
+    </div><!--close card-->
+
+
+
+  <br>
+
+
+ <div class="card "  id="vi" onclick="gofor(this.id)">
+
+        <a href="detDV.html" class="no-underline"> 
+
+          <div class="row no-gutters ">
+            <div class="col-auto scal3 ">
+                <img src="css/images/drip/v.jpg" class="img-fluid" alt="">
+            </div>
+
+            <div class="col">
+                <div class="card-block px-3">
+                    <h5 class="card-title">ڤي 60</h5>
+           
+                  <div id="textbox">
+                     <p class="alignleft"><i class="flaticon-calorie "></i>7</p>
+                     <p class="alignright"><i class="flaticon-riyal"></i>15.00</i></p>
+                         </div>
+
+                </div> <!--close block-->
+
+            </div> <!--close col-->
+
+        </div><!--close row--></a>
+
+    </div> <!--close card-->
+
+    <br>
+
+
+
+    <div class="card ">
+
+      <a href="detDKm.html" class="no-underline">   
+
+        <div class="row no-gutters">
+           <div class="col-auto scal3 ">
+                <img src="css/images/drip/kim.jpg" class="img-fluid" alt="">
+            </div>
+
+            <div class="col">
+                <div class="card-block px-3">
+                   <h5 class="card-title">كيميكس</h5>
+                    
+
+                    <div id="textbox">
+                     <p class="alignleft"><i class="flaticon-calorie"></i>7</p>
+                     <p class="alignright"><i class="flaticon-riyal"></i>15.00</i></p>
+                         </div>
+
+                </div><!--close block-->
+            </div><!--close col-->
+        </div><!--close row-->
+</a>
+    </div><!--close card-->
+
+   <br>
+
+
+</div> <!--close container-->
+
+
+
+</div><!-- end last pill-->
+
+
+
+
+
+ <!--start Hot--> 
+
+  <div class="tab-pane fade" id="pills-hotCoffee" role="tabpanel" aria-labelledby="pills-profile-tab">
+
+
+<div class="container">
+
+   
+ <div class="card ">
+
+       <a href="detHL.html" class="no-underline"> 
+        <div class="row no-gutters ">
+
+            <div class="col-auto scal3">
+                <img src="css/images/hot/lat.jpg" class="img-fluid" alt="">
+            </div>
+
+            <div class="col">
+                <div class="card-block px-3">
+                    <h5 class="card-title">لاتيه</h5>
+           
+                  <div id="textbox">
+                     <p class="alignleft"><i class="flaticon-calorie"></i>128</p>
+                     <p class="alignright"><i class="flaticon-riyal"></i>15.00</i></p>
+                         </div>
+
+                </div> <!--close block-->
+
+            </div> <!--close col-->
+
+        </div><!--close row--></a>
+
+    </div> <!--close card-->
+
+    <br>
+
+
+
+ <div class="card ">
+
+       <a href="detHS.html" class="no-underline"> 
+        <div class="row no-gutters ">
+
+            <div class="col-auto scal3">
+                <img src="css/images/hot/lat.jpg" class="img-fluid" alt="">
+            </div>
+
+            <div class="col">
+                <div class="card-block px-3">
+                    <h5 class="card-title">سبانيش</h5>
+           
+                  <div id="textbox">
+                     <p class="alignleft"><i class="flaticon-calorie"></i>198</p>
+                     <p class="alignright"><i class="flaticon-riyal"></i>16.00</i></p>
+                         </div>
+
+                </div> <!--close block-->
+
+            </div> <!--close col-->
+
+        </div><!--close row--></a>
+
+    </div> <!--close card-->
+
+
+
+
+   <br>
+
+
+
+
+
+ <div class="card ">
+
+       <a href="detHKo.html" class="no-underline"> 
+        <div class="row no-gutters ">
+
+            <div class="col-auto scal3">
+                <img src="css/images/hot/kor.jpg" class="img-fluid" alt="">
+            </div>
+
+            <div class="col">
+                <div class="card-block px-3">
+                    <h5 class="card-title">كورتادو</h5>
+           
+                  <div id="textbox">
+                     <p class="alignleft"><i class="flaticon-calorie"></i>43</p>
+                     <p class="alignright"><i class="flaticon-riyal"></i>15.00</i></p>
+                         </div>
+
+                </div> <!--close block-->
+
+            </div> <!--close col-->
+
+        </div><!--close row--></a>
+
+    </div> <!--close card-->
+
+  <br>
+
+
+ <div class="card ">
+
+       <a href="detHK.html" class="no-underline"> 
+        <div class="row no-gutters ">
+
+            <div class="col-auto scal3">
+                <img src="css/images/hot/kap.jpg" class="img-fluid" alt="">
+            </div>
+
+            <div class="col">
+                <div class="card-block px-3">
+                    <h5 class="card-title">كابتشينو</h5>
+           
+                  <div id="textbox">
+                     <p class="alignleft"><i class="flaticon-calorie"></i>108</p>
+                     <p class="alignright"><i class="flaticon-riyal"></i>15.00</i></p>
+                         </div>
+
+                </div> <!--close block-->
+
+            </div> <!--close col-->
+
+        </div><!--close row--></a>
+
+    </div> <!--close card-->
+
+
+  </br>
+
+
+   <div class="card ">
+
+       <a href="detHZ.html" class="no-underline"> 
+        <div class="row no-gutters ">
+
+            <div class="col-auto scal3">
+                <img src="css/images/hot/zen.jpg" class="img-fluid" alt="">
+            </div>
+
+            <div class="col">
+                <div class="card-block px-3">
+                    <h5 class="card-title">زنجبيل لاتيه</h5>
+           
+                  <div id="textbox">
+                     <p class="alignleft"><i class="flaticon-calorie"></i></p>
+                     <p class="alignright"><i class="flaticon-riyal"></i>18.00</i></p>
+                         </div>
+
+                </div> <!--close block-->
+
+            </div> <!--close col-->
+
+        </div><!--close row--></a>
+
+    </div> <!--close card-->
+<br>
+
+
+ <div class="card ">
+
+       <a href="detHKol.html" class="no-underline"> 
+        <div class="row no-gutters ">
+
+            <div class="col-auto scal3">
+                <img src="css/images/hot/kal.jpg" class="img-fluid" alt="">
+            </div>
+
+            <div class="col">
+                <div class="card-block px-3">
+                    <h5 class="card-title">كليجا لاتيه</h5>
+           
+                  <div id="textbox">
+                     <p class="alignleft"><i class="flaticon-calorie"></i></p>
+                     <p class="alignright"><i class="flaticon-riyal"></i>20.00</i></p>
+                         </div>
+
+                </div> <!--close block-->
+
+            </div> <!--close col-->
+
+        </div><!--close row--></a>
+
+    </div> <!--close card-->
+
+<br>
+
+
+ <div class="card ">
+
+       <a href="detHCho.html" class="no-underline"> 
+        <div class="row no-gutters ">
+
+            <div class="col-auto scal3">
+                <img src="css/images/hot/cho.jpg" class="img-fluid" alt="">
+            </div>
+
+            <div class="col">
+                <div class="card-block px-3">
+                    <h5 class="card-title">هوت تشوكلت</h5>
+           
+                  <div id="textbox">
+                     <p class="alignleft"><i class="flaticon-calorie"></i></p>
+                     <p class="alignright"><i class="flaticon-riyal"></i>16.00</i></p>
+                         </div>
+
+                </div> <!--close block-->
+
+            </div> <!--close col-->
+
+        </div><!--close row--></a>
+
+    </div> <!--close card-->
+
+
+    <br>
+
+
+ <div class="card ">
+
+       <a href="detHF.html" class="no-underline"> 
+        <div class="row no-gutters ">
+
+            <div class="col-auto scal3">
+                <img src="css/images/hot/flat.jpg" class="img-fluid" alt="">
+            </div>
+
+            <div class="col">
+                <div class="card-block px-3">
+                    <h5 class="card-title">فلات وايت</h5>
+           
+                  <div id="textbox">
+                     <p class="alignleft"><i class="flaticon-calorie"></i>43</p>
+                     <p class="alignright"><i class="flaticon-riyal"></i>15.00</i></p>
+                         </div>
+
+                </div> <!--close block-->
+
+            </div> <!--close col-->
+
+        </div><!--close row--></a>
+
+    </div> <!--close card-->
+
+
+    <br>
+
+
+ <div class="card ">
+
+       <a href="detHE.html" class="no-underline"> 
+        <div class="row no-gutters ">
+
+            <div class="col-auto scal3">
+                <img src="css/images/hot/esp.jpg" class="img-fluid" alt="">
+            </div>
+
+            <div class="col">
+                <div class="card-block px-3">
+                    <h5 class="card-title">اسبريسو</h5>
+           
+                  <div id="textbox">
+                     <p class="alignleft"><i class="flaticon-calorie"></i>7</p>
+                     <p class="alignright"><i class="flaticon-riyal"></i>10.00</i></p>
+                         </div>
+
+                </div> <!--close block-->
+
+            </div> <!--close col-->
+
+        </div><!--close row--></a>
+
+    </div> <!--close card-->
+
+
+    <br>
+
+
+ <div class="card ">
+
+       <a href="detHA.html" class="no-underline"> 
+        <div class="row no-gutters ">
+
+            <div class="col-auto scal3">
+                <img src="css/images/hot/esp.jpg" class="img-fluid" alt="">
+            </div>
+
+            <div class="col">
+                <div class="card-block px-3">
+                    <h5 class="card-title">امريكانو</h5>
+           
+                  <div id="textbox">
+                     <p class="alignleft"><i class="flaticon-calorie"></i>7</p>
+                     <p class="alignright"><i class="flaticon-riyal"></i>12.00</i></p>
+                         </div>
+
+                </div> <!--close block-->
+
+            </div> <!--close col-->
+
+        </div><!--close row--></a>
+
+    </div> <!--close card-->
+
+
+
+<br>
+
+
+ <div class="card ">
+
+       <a href="detHY.html" class="no-underline"> 
+        <div class="row no-gutters ">
+
+            <div class="col-auto scal3">
+                <img src="css/images/hot/esp.jpg" class="img-fluid" alt="">
+            </div>
+
+            <div class="col">
+                <div class="card-block px-3">
+                    <h5 class="card-title">قهوة اليوم</h5>
+           
+                  <div id="textbox">
+                     <p class="alignleft"><i class="flaticon-calorie"></i>7</p>
+                     <p class="alignright"><i class="flaticon-riyal"></i>10.00</i></p>
+                         </div>
+
+                </div> <!--close block-->
+
+            </div> <!--close col-->
+
+        </div><!--close row--></a>
+
+    </div> <!--close card-->
+
+    <br>
+
+
+</div> <!--close container-->
+
+  </div><!-- end pill-->
+
+
+
+
+
+ <!--start Ice--> 
+
+<div class="tab-pane fade" id="pills-IceCoffee" role="tabpanel" aria-labelledby="pills-contact-tab">
+
+<div class="container">
+
+   
+ <div class="card ">
+
+       <a href="detCD.html" class="no-underline"> 
+        <div class="row no-gutters ">
+
+            <div class="col-auto scal3">
+                <img src="css/images/cold/dr.jpg" class="img-fluid" alt="">
+            </div>
+
+            <div class="col">
+                <div class="card-block px-3">
+                    <h5 class="card-title">آيس دريب</h5>
+           
+                  <div id="textbox">
+                     <p class="alignleft"><i class="flaticon-calorie"></i>7</p>
+                     <p class="alignright"><i class="flaticon-riyal"></i>16.00</i></p>
+                         </div>
+
+                </div> <!--close block-->
+
+            </div> <!--close col-->
+
+        </div><!--close row--></a>
+
+    </div> <!--close card-->
+
+
+    <br>
+
+ <div class="card ">
+
+       <a href="detCA.html" class="no-underline"> 
+        <div class="row no-gutters ">
+
+            <div class="col-auto scal3">
+                <img src="css/images/cold/am.jpg" class="img-fluid" alt="">
+            </div>
+
+            <div class="col">
+                <div class="card-block px-3">
+                    <h5 class="card-title">آيس أمريكانو</h5>
+           
+                  <div id="textbox">
+                     <p class="alignleft"><i class="flaticon-calorie"></i>7</p>
+                     <p class="alignright"><i class="flaticon-riyal"></i>14.00</i></p>
+                         </div>
+
+                </div> <!--close block-->
+
+            </div> <!--close col-->
+
+        </div><!--close row--></a>
+
+    </div> <!--close card-->
+
+
+    <br>
+
+ <div class="card ">
+
+       <a href="detCB.html" class="no-underline"> 
+        <div class="row no-gutters ">
+
+            <div class="col-auto scal3">
+                <img src="css/images/cold/ba.jpg" class="img-fluid" alt="">
+            </div>
+
+            <div class="col">
+                <div class="card-block px-3">
+                    <h5 class="card-title">آيس بستاشيو</h5>
+           
+                  <div id="textbox">
+                     <p class="alignleft"><i class="flaticon-calorie"></i>260</p>
+                     <p class="alignright"><i class="flaticon-riyal"></i>20.00</i></p>
+                         </div>
+
+                </div> <!--close block-->
+
+            </div> <!--close col-->
+
+        </div><!--close row--></a>
+
+    </div> <!--close card-->
+
+        <br>
+
+ <div class="card ">
+
+       <a href="detCS.html" class="no-underline"> 
+        <div class="row no-gutters ">
+
+            <div class="col-auto scal3">
+                <img src="css/images/cold/sp.jpg" class="img-fluid" alt="">
+            </div>
+
+            <div class="col">
+                <div class="card-block px-3">
+                    <h5 class="card-title">آيس سبانيش</h5>
+           
+                  <div id="textbox">
+                     <p class="alignleft"><i class="flaticon-calorie"></i>230</p>
+                     <p class="alignright"><i class="flaticon-riyal"></i>18.00</i></p>
+                         </div>
+
+                </div> <!--close block-->
+
+            </div> <!--close col-->
+
+        </div><!--close row--></a>
+
+    </div> <!--close card-->
+
+        <br>
+
+ <div class="card ">
+
+       <a href="detCL.html" class="no-underline"> 
+        <div class="row no-gutters ">
+
+            <div class="col-auto scal3">
+                <img src="css/images/cold/la.jpg" class="img-fluid" alt="">
+            </div>
+
+            <div class="col">
+                <div class="card-block px-3">
+                    <h5 class="card-title">آيس لاتيه</h5>
+           
+                  <div id="textbox">
+                     <p class="alignleft"><i class="flaticon-calorie"></i>168</p>
+                     <p class="alignright"><i class="flaticon-riyal"></i>15.00</i></p>
+                         </div>
+
+                </div> <!--close block-->
+
+            </div> <!--close col-->
+
+        </div><!--close row--></a>
+
+    </div> <!--close card-->
+
+        <br>
+
+ <div class="card ">
+
+       <a href="detCRD.html" class="no-underline"> 
+        <div class="row no-gutters ">
+
+            <div class="col-auto scal3">
+                <img src="css/images/cold/sp.jpg" class="img-fluid" alt="">
+            </div>
+
+            <div class="col">
+                <div class="card-block px-3">
+                    <h5 class="card-title">آيس رد فلفت</h5>
+           
+                  <div id="textbox">
+                     <p class="alignleft"><i class="flaticon-calorie"></i>230</p>
+                     <p class="alignright"><i class="flaticon-riyal"></i>18.00</i></p>
+                         </div>
+
+                </div> <!--close block-->
+
+            </div> <!--close col-->
+
+        </div><!--close row--></a>
+
+    </div> <!--close card-->
+
+        <br>
+
+ <div class="card ">
+
+       <a href="detCNn.html" class="no-underline"> 
+        <div class="row no-gutters ">
+
+            <div class="col-auto scal3">
+                <img src="css/images/cold/am.jpg" class="img-fluid" alt="">
+            </div>
+
+            <div class="col">
+                <div class="card-block px-3">
+                    <h5 class="card-title">نايترو كولد برو</h5>
+           
+                  <div id="textbox">
+                     <p class="alignleft"><i class="flaticon-calorie"></i>230</p>
+                     <p class="alignright"><i class="flaticon-riyal"></i>19.00</i></p>
+                         </div>
+
+                </div> <!--close block-->
+
+            </div> <!--close col-->
+
+        </div><!--close row--></a>
+
+    </div> <!--close card-->
+
+        <br>
+
+ <div class="card ">
+
+       <a href="detCC.html" class="no-underline"> 
+        <div class="row no-gutters ">
+
+            <div class="col-auto scal3">
+                <img src="css/images/cold/am.jpg" class="img-fluid" alt="">
+            </div>
+
+            <div class="col">
+                <div class="card-block px-3">
+                    <h5 class="card-title">كولد برو</h5>
+           
+                  <div id="textbox">
+                     <p class="alignleft"><i class="flaticon-calorie"></i></p>
+                     <p class="alignright"><i class="flaticon-riyal"></i>19.00</i></p>
+                         </div>
+
+                </div> <!--close block-->
+
+            </div> <!--close col-->
+
+        </div><!--close row--></a>
+
+    </div> <!--close card-->
+     <br>
+</div> <!--close container-->
+
+</div><!-- end pill-->
+
+
+
+
+
+
+
+ <!--start Tea--> 
+<div class="tab-pane fade" id="pills-Tea" role="tabpanel" aria-labelledby="pills-contact-tab">
+
+
+<div class="container">
+
+   
+ <div class="card ">
+
+       <a href="detTK.html" class="no-underline"> 
+        <div class="row no-gutters ">
+
+            <div class="col-auto scal3">
+                <img src="css/images/tea/ta.jpg" class="img-fluid" alt="">
+            </div>
+
+            <div class="col">
+                <div class="card-block px-3">
+                    <h5 class="card-title">شاي أخضر</h5>
+           
+                  <div id="textbox">
+                     <p class="alignleft"><i class="flaticon-calorie"></i>7</p>
+                     <p class="alignright"><i class="flaticon-riyal"></i>6.00</i></p>
+                         </div>
+
+                </div> <!--close block-->
+
+            </div> <!--close col-->
+
+        </div><!--close row--></a>
+
+    </div> <!--close card-->
+
+
+    <br>
+
+</div> <!--close container-->
+</div><!-- end pill-->
+
+
+
+
+
+
+ <!--start ches--> 
+<div class="tab-pane fade" id="pills-sweet" role="tabpanel" aria-labelledby="pills-contact-tab">
+
+
+<div class="container">
+
+   
+ <div class="card ">
+
+       <a href="detChB.html" class="no-underline"> 
+        <div class="row no-gutters ">
+
+            <div class="col-auto scal3">
+                <img src="css/images/ches/bg.jpg" class="img-fluid" alt="">
+            </div>
+
+            <div class="col">
+                <div class="card-block px-3">
+                    <h5 class="card-title">تشيزكيك حلاو بقر</h5>
+           
+                  <div id="textbox">
+                     <p class="alignleft"><i class="flaticon-calorie"></i>321</p>
+                     <p class="alignright"><i class="flaticon-riyal"></i>18.00</i></p>
+                         </div>
+
+                </div> <!--close block-->
+
+            </div> <!--close col-->
+
+        </div><!--close row--></a>
+
+    </div> <!--close card-->
+
+  <br>
+ <div class="card ">
+
+       <a href="detChT.html" class="no-underline"> 
+        <div class="row no-gutters ">
+
+            <div class="col-auto scal3">
+                <img src="css/images/ches/tot.jpg" class="img-fluid" alt="">
+            </div>
+
+            <div class="col">
+                <div class="card-block px-3">
+                    <h5 class="card-title">تشيزكيك توت أزرق</h5>
+           
+                  <div id="textbox">
+                     <p class="alignleft"><i class="flaticon-calorie"></i>321</p>
+                     <p class="alignright"><i class="flaticon-riyal"></i>18.00</i></p>
+                         </div>
+
+                </div> <!--close block-->
+
+            </div> <!--close col-->
+
+        </div><!--close row--></a>
+
+    </div> <!--close card-->
+
+  <br>
+ <div class="card ">
+
+       <a href="detChL.html" class="no-underline"> 
+        <div class="row no-gutters ">
+
+            <div class="col-auto scal3">
+                <img src="css/images/ches/lot.jpg" class="img-fluid" alt="">
+            </div>
+
+            <div class="col">
+                <div class="card-block px-3">
+                    <h5 class="card-title">تشيزكيك لوتس</h5>
+           
+                  <div id="textbox">
+                     <p class="alignleft"><i class="flaticon-calorie"></i>321</p>
+                     <p class="alignright"><i class="flaticon-riyal"></i>18.00</i></p>
+                         </div>
+
+                </div> <!--close block-->
+
+            </div> <!--close col-->
+
+        </div><!--close row--></a>
+
+    </div> <!--close card-->
+
+      <br>
+ <div class="card ">
+
+       <a href="detChN.html" class="no-underline"> 
+        <div class="row no-gutters ">
+
+            <div class="col-auto scal3">
+                <img src="css/images/ches/not.jpg" class="img-fluid" alt="">
+            </div>
+
+            <div class="col">
+                <div class="card-block px-3">
+                    <h5 class="card-title">تشيزكيك نوتيلا</h5>
+           
+                  <div id="textbox">
+                     <p class="alignleft"><i class="flaticon-calorie"></i>321</p>
+                     <p class="alignright"><i class="flaticon-riyal"></i>18.00</i></p>
+                         </div>
+
+                </div> <!--close block-->
+
+            </div> <!--close col-->
+
+        </div><!--close row--></a>
+
+    </div> <!--close card-->
+
+
+      <br>
+ <div class="card ">
+
+       <a href="detChF.html" class="no-underline"> 
+        <div class="row no-gutters ">
+
+            <div class="col-auto scal3">
+                <img src="css/images/ches/fa.jpg" class="img-fluid" alt="">
+            </div>
+
+            <div class="col">
+                <div class="card-block px-3">
+                    <h5 class="card-title">تشيزكيك فراولة</h5>
+           
+                  <div id="textbox">
+                     <p class="alignleft"><i class="flaticon-calorie"></i>321</p>
+                     <p class="alignright"><i class="flaticon-riyal"></i>18.00</i></p>
+                         </div>
+
+                </div> <!--close block-->
+
+            </div> <!--close col-->
+
+        </div><!--close row--></a>
+
+    </div> <!--close card-->
+   
+
+       <br>
+
+
+</div> <!--close container-->
+
+
+</div><!-- end pill-->
+
+
+
+
+ <!--start cockis--> 
+<div class="tab-pane fade" id="pills-coc" role="tabpanel" aria-labelledby="pills-contact-tab">
+
+<div class="container">
+
+   
+ <div class="card ">
+
+       <a href="detCM.html" class="no-underline"> 
+        <div class="row no-gutters ">
+
+            <div class="col-auto scal3">
+                <img src="css/images/coc/ma.jpg" class="img-fluid" alt="">
+            </div>
+
+            <div class="col">
+                <div class="card-block px-3">
+                    <h5 class="card-title">كوكيز مارشملو</h5>
+           
+                  <div id="textbox">
+                     <p class="alignleft"><i class="flaticon-calorie"></i>370</p>
+                     <p class="alignright"><i class="flaticon-riyal"></i>8.00</i></p>
+                         </div>
+
+                </div> <!--close block-->
+
+            </div> <!--close col-->
+
+        </div><!--close row--></a>
+
+    </div> <!--close card-->
+
+
+       <br>
+
+ <div class="card ">
+
+       <a href="detCK.html" class="no-underline"> 
+        <div class="row no-gutters ">
+
+            <div class="col-auto scal3">
+                <img src="css/images/coc/kl.jpg" class="img-fluid" alt="">
+            </div>
+
+            <div class="col">
+                <div class="card-block px-3">
+                    <h5 class="card-title">كوكيز كلاسيك</h5>
+           
+                  <div id="textbox">
+                     <p class="alignleft"><i class="flaticon-calorie"></i>350</p>
+                     <p class="alignright"><i class="flaticon-riyal"></i>8.00</i></p>
+                         </div>
+
+                </div> <!--close block-->
+
+            </div> <!--close col-->
+
+        </div><!--close row--></a>
+
+    </div> <!--close card-->
+
+    <br>
+
+     <div class="card ">
+
+       <a href="detCR.html" class="no-underline"> 
+        <div class="row no-gutters ">
+
+            <div class="col-auto scal3">
+                <img src="css/images/coc/red.jpg" class="img-fluid" alt="">
+            </div>
+
+            <div class="col">
+                <div class="card-block px-3">
+                    <h5 class="card-title">كوكيز ريدفيلفت</h5>
+           
+                  <div id="textbox">
+                     <p class="alignleft"><i class="flaticon-calorie"></i>320</p>
+                     <p class="alignright"><i class="flaticon-riyal"></i>8.00</i></p>
+                         </div>
+
+                </div> <!--close block-->
+
+            </div> <!--close col-->
+
+        </div><!--close row--></a>
+
+    </div> <!--close card-->
+
+    <br>
+     <div class="card ">
+
+       <a href="detCF.html" class="no-underline"> 
+        <div class="row no-gutters ">
+
+            <div class="col-auto scal3">
+                <img src="css/images/coc/fol.jpg" class="img-fluid" alt="">
+            </div>
+
+            <div class="col">
+                <div class="card-block px-3">
+                    <h5 class="card-title">كوكيز فول سوداني</h5>
+           
+                  <div id="textbox">
+                     <p class="alignleft"><i class="flaticon-calorie"></i>330</p>
+                     <p class="alignright"><i class="flaticon-riyal"></i>8.00</i></p>
+                         </div>
+
+                </div> <!--close block-->
+
+            </div> <!--close col-->
+
+        </div><!--close row--></a>
+
+    </div> <!--close card-->
+
+    <br>
+     <div class="card ">
+
+       <a href="detCN.html" class="no-underline"> 
+        <div class="row no-gutters ">
+
+            <div class="col-auto scal3">
+                <img src="css/images/coc/not.jpg" class="img-fluid" alt="">
+            </div>
+
+            <div class="col">
+                <div class="card-block px-3">
+                    <h5 class="card-title">كوكيز دبل شوكلاتة</h5>
+           
+                  <div id="textbox">
+                     <p class="alignleft"><i class="flaticon-calorie"></i>370</p>
+                     <p class="alignright"><i class="flaticon-riyal"></i>8.00</i></p>
+                         </div>
+
+                </div> <!--close block-->
+
+            </div> <!--close col-->
+
+        </div><!--close row--></a>
+
+    </div> <!--close card-->
+
+
+    <br>
+
+
+
+</div> <!--close container-->
+</div><!-- end pill-->
+
+
+
+
+
+ <!--start carson--> 
+<div class="tab-pane fade" id="pills-carson" role="tabpanel" aria-labelledby="pills-contact-tab">
+
+<div class="container">
+
+   
+ <div class="card ">
+
+         <a href="detCarEmp.html" class="no-underline"> <div class="row no-gutters ">
+
+            <div class="col-auto scal3">
+                <img src="css/images/carson/emp.jpg" class="img-fluid" alt="">
+            </div>
+
+            <div class="col">
+                <div class="card-block px-3">
+                    <h5 class="card-title">كرواسون سادة</h5>
+           
+                  <div id="textbox">
+                     <p class="alignleft"><i class="flaticon-calorie"></i></p>
+                     <p class="alignright"><i class="flaticon-riyal"></i> 9.00</i></p>
+                         </div>
+
+                </div> <!--close block-->
+
+            </div> <!--close col-->
+
+        </div><!--close row--> 
+      </a><!--close link--> 
+
+    </div> <!--close card-->
+
+
+
+
+    <br>
+
+
+ <div class="card ">
+
+         <a href="detCarkin.html" class="no-underline"> <div class="row no-gutters ">
+
+            <div class="col-auto scal3">
+                <img src="css/images/carson/kin.jpg" class="img-fluid" alt="">
+            </div>
+
+            <div class="col">
+                <div class="card-block px-3">
+                    <h5 class="card-title">كرواسون كيندر</h5>
+           
+                  <div id="textbox">
+                     <p class="alignleft"><i class="flaticon-calorie"></i></p>
+                     <p class="alignright"><i class="flaticon-riyal"></i> 9.00</i></p>
+                         </div>
+
+                </div> <!--close block-->
+
+            </div> <!--close col-->
+
+        </div><!--close row--> 
+      </a><!--close link--> 
+
+    </div> <!--close card-->
+
+   <br>
+
+ <div class="card ">
+
+         <a href="detCarloz.html" class="no-underline"> <div class="row no-gutters ">
+
+            <div class="col-auto scal3">
+                <img src="css/images/carson/loz.jpg" class="img-fluid" alt="">
+            </div>
+
+            <div class="col">
+                <div class="card-block px-3">
+                    <h5 class="card-title">كرواسون لوز</h5>
+           
+                  <div id="textbox">
+                     <p class="alignleft"><i class="flaticon-calorie"></i></p>
+                     <p class="alignright"><i class="flaticon-riyal"></i> 9.00</i></p>
+                         </div>
+
+                </div> <!--close block-->
+
+            </div> <!--close col-->
+
+        </div><!--close row--> 
+      </a><!--close link--> 
+
+    </div> <!--close card-->
+
+  <br>
+
+ <div class="card ">
+
+         <a href="detCarnot.html" class="no-underline"> <div class="row no-gutters ">
+
+            <div class="col-auto scal3">
+                <img src="css/images/carson/not.jpg" class="img-fluid" alt="">
+            </div>
+
+            <div class="col">
+                <div class="card-block px-3">
+                    <h5 class="card-title">كرواسون شوكلاتة</h5>
+           
+                  <div id="textbox">
+                     <p class="alignleft"><i class="flaticon-calorie"></i></p>
+                     <p class="alignright"><i class="flaticon-riyal"></i> 9.00</i></p>
+                         </div>
+
+                </div> <!--close block-->
+
+            </div> <!--close col-->
+
+        </div><!--close row--> 
+      </a><!--close link--> 
+
+    </div> <!--close card-->
+
+    <br>
+
+ <div class="card ">
+
+         <a href="detCarlot.html" class="no-underline"> <div class="row no-gutters ">
+
+            <div class="col-auto scal3">
+                <img src="css/images/carson/lot.jpg" class="img-fluid" alt="">
+            </div>
+
+            <div class="col">
+                <div class="card-block px-3">
+                    <h5 class="card-title">كرواسون لوتس </h5>
+           
+                  <div id="textbox">
+                     <p class="alignleft"><i class="flaticon-calorie"></i></p>
+                     <p class="alignright"><i class="flaticon-riyal"></i> 9.00</i></p>
+                         </div>
+
+                </div> <!--close block-->
+
+            </div> <!--close col-->
+
+        </div><!--close row--> 
+      </a><!--close link--> 
+
+    </div> <!--close card-->
+
+    <br>
+
+</div> <!--close container-->
+
+
+</div><!-- end last pill-->
+
+
+ <!--start bar--> 
+
+<div class="tab-pane fade" id="pills-bar" role="tabpanel" aria-labelledby="pills-contact-tab">
+
+<div class="container">
+
+   
+ <div class="card ">
+
+         <a href="detBZ.html" class="no-underline"> <div class="row no-gutters ">
+
+            <div class="col-auto scal3">
+                <img src="css/images/bar/za.jpg" class="img-fluid" alt="">
+            </div>
+
+            <div class="col">
+                <div class="card-block px-3">
+                    <h5 class="card-title">زعفران</h5>
+           
+                  <div id="textbox">
+                     <p class="alignleft"><i class="flaticon-calorie"></i></p>
+                     <p class="alignright"><i class="flaticon-riyal"></i> 7.00</i></p>
+                         </div>
+
+                </div> <!--close block-->
+
+            </div> <!--close col-->
+
+        </div><!--close row--> 
+      </a><!--close link--> 
+
+    </div> <!--close card-->
+
+    <br>
+
+ <div class="card ">
+
+         <a href="detBM.html" class="no-underline"> <div class="row no-gutters ">
+
+            <div class="col-auto scal3">
+                <img src="css/images/bar/me.jpg" class="img-fluid" alt="">
+            </div>
+
+            <div class="col">
+                <div class="card-block px-3">
+                    <h5 class="card-title">مستكة</h5>
+           
+                  <div id="textbox">
+                     <p class="alignleft"><i class="flaticon-calorie"></i></p>
+                     <p class="alignright"><i class="flaticon-riyal"></i> 7.00</i></p>
+                         </div>
+
+                </div> <!--close block-->
+
+            </div> <!--close col-->
+
+        </div><!--close row--> 
+      </a><!--close link--> 
+
+    </div> <!--close card-->
+
+    <br>
+
+ <div class="card ">
+
+         <a href="detBF.html" class="no-underline"> <div class="row no-gutters ">
+
+            <div class="col-auto scal3">
+                <img src="css/images/bar/fo.jpg" class="img-fluid" alt="">
+            </div>
+
+            <div class="col">
+                <div class="card-block px-3">
+                    <h5 class="card-title">فول سوداني</h5>
+           
+                  <div id="textbox">
+                     <p class="alignleft"><i class="flaticon-calorie"></i></p>
+                     <p class="alignright"><i class="flaticon-riyal"></i> 7.00</i></p>
+                         </div>
+
+                </div> <!--close block-->
+
+            </div> <!--close col-->
+
+        </div><!--close row--> 
+      </a><!--close link--> 
+
+    </div> <!--close card-->
+
+        <br>
+
+ <div class="card ">
+
+         <a href="detBB.html" class="no-underline"> <div class="row no-gutters ">
+
+            <div class="col-auto scal3">
+                <img src="css/images/bar/ba.jpg" class="img-fluid" alt="">
+            </div>
+
+            <div class="col">
+                <div class="card-block px-3">
+                    <h5 class="card-title">بستاشيو</h5>
+           
+                  <div id="textbox">
+                     <p class="alignleft"><i class="flaticon-calorie"></i></p>
+                     <p class="alignright"><i class="flaticon-riyal"></i> 7.00</i></p>
+                         </div>
+
+                </div> <!--close block-->
+
+            </div> <!--close col-->
+
+        </div><!--close row--> 
+      </a><!--close link--> 
+
+    </div> <!--close card-->
+
+        <br>
+
+ <div class="card ">
+
+         <a href="detBN.html" class="no-underline"> <div class="row no-gutters ">
+
+            <div class="col-auto scal3">
+                <img src="css/images/bar/no.jpg" class="img-fluid" alt="">
+            </div>
+
+            <div class="col">
+                <div class="card-block px-3">
+                    <h5 class="card-title">نوتيلا</h5>
+           
+                  <div id="textbox">
+                     <p class="alignleft"><i class="flaticon-calorie"></i></p>
+                     <p class="alignright"><i class="flaticon-riyal"></i> 7.00</i></p>
+                         </div>
+
+                </div> <!--close block-->
+
+            </div> <!--close col-->
+
+        </div><!--close row--> 
+      </a><!--close link--> 
+
+    </div> <!--close card-->
+
+        <br>
+
+ <div class="card ">
+
+         <a href="detBD.html" class="no-underline"> <div class="row no-gutters ">
+
+            <div class="col-auto scal3">
+                <img src="css/images/bar/da.jpg" class="img-fluid" alt="">
+            </div>
+
+            <div class="col">
+                <div class="card-block px-3">
+                    <h5 class="card-title">شوكولاتة داكنة</h5>
+           
+                  <div id="textbox">
+                     <p class="alignleft"><i class="flaticon-calorie"></i></p>
+                     <p class="alignright"><i class="flaticon-riyal"></i> 7.00</i></p>
+                         </div>
+
+                </div> <!--close block-->
+
+            </div> <!--close col-->
+
+        </div><!--close row--> 
+      </a><!--close link--> 
+
+    </div> <!--close card-->
+
+        <br>
+
+ <div class="card ">
+
+         <a href="detBR.html" class="no-underline"> <div class="row no-gutters ">
+
+            <div class="col-auto scal3">
+                <img src="css/images/bar/re.jpg" class="img-fluid" alt="">
+            </div>
+
+            <div class="col">
+                <div class="card-block px-3">
+                    <h5 class="card-title">رد فلفت</h5>
+           
+                  <div id="textbox">
+                     <p class="alignleft"><i class="flaticon-calorie"></i></p>
+                     <p class="alignright"><i class="flaticon-riyal"></i> 7.00</i></p>
+                         </div>
+
+                </div> <!--close block-->
+
+            </div> <!--close col-->
+
+        </div><!--close row--> 
+      </a><!--close link--> 
+
+    </div> <!--close card-->
+
+
+
+
+
+    <br>
+
+</div> <!--close container-->
+</div><!-- end pill-->
+
+
+
+</div><!-- end pillsssssss-->
+
+
+
+
+<!--Footer-->
+
+
+
+
+ </div>
+</body>
+ </html>
