@@ -128,7 +128,12 @@ font-family: Harmattan;
   padding-right: 85px;
 }
 
+.aligncenter {
+ float: center;
+    color:#d2612a;
 
+  padding-right: 85px;
+}
         /* Card image loading */
     
         .card__image.loading {
