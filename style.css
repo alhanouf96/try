@@ -23,14 +23,14 @@ body {
        url('../fonts/el-messiri-v9-latin-regular.svg#ElMessiri') format('svg'); /* Legacy iOS */
 }
 .boody{
-background-color:  #51c9c2; 
+
 
 }
 
 h1{
  text-align: center;
   color: #fcfff5;
-  font-size: 20px;
+  font-size: 26px;
   font-family:Monospace;
 }
 
