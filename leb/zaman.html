@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css"> 
+</head>
+
+<body dir="rtl">
+
+
+  <div class="container">
+  
+      <div class="row col-md-6 col-md-offset-3">
+  
+        <div class="panel panel-primary">
+          <div class="header-panel ">
+            <div class="img">     
+              <picture class="img">
+
+ <img src="logo.png" alt="" class="img" >
+</picture> </div>
+
+            <h1>نشكر لكم ثقتكم في منتجات ليبرتون</h1>
+          </div>
+          <div class="panel-body"><form method="post" enctype="multipart/form-data">
+
+              <div class="form-group">
+                <label for="firstName">الإسم الأول</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="firstName"
+                  name="firstName"
+                Required/>
+              </div>
+
+              <div class="form-group">
+                <label for="lastName">الإسم الأخير</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="lastName"
+                  name="lastName"
+                Required/>
+              </div>
+
+              <div class="form-group">
+                <label for="number">رقم الجوال</label>
+                <input
+                  type="number"
+                  class="form-control"
+                  id="number"
+                  name="number"
+               Required />
+              </div>
+
+
+              <div class="form-group">
+                <label for="gender">نوع الحماية</label>
+
+                <div>
+                  <label for="male" class="radio-inline"
+                    ><input
+                      type="radio"
+                      name="gender"
+                      value="m"
+                      id="male"
+                  Required  />  &nbsp;  &nbsp;  ستكر</label
+                  >
+                  <label for="female" class="radio-inline"
+                    ><input
+                      type="radio"
+                      name="gender"
+                      value="f"
+                      id="female"
+                    /> &nbsp;  &nbsp;  تغليف حراري</label
+                  >
+                  <label for="others" class="radio-inline"
+                    ><input
+                      type="radio"
+                      name="gender"
+                      value="o"
+                      id="others"
+                    /> &nbsp;  &nbsp; باكيج</label
+                  >
+                </div>
+              </div>
+
+
+  <div class="form-group" >
+                <label for="insh">نوع الضمان</label>
+
+                <div>
+                  <label for="male" class="radio-inline"
+                    ><input
+                      type="radio"
+                      name="insh"
+                      value="fzz"
+                      id="fz"
+                   Required />  &nbsp;  &nbsp;  ضمان فضي</label
+                  >
+                  <label for="female" class="radio-inline"
+                    ><input
+                      type="radio"
+                      name="insh"
+                      value="blatt"
+                      id="blat"
+                    /> &nbsp;  &nbsp;  ضمان بلاتيني</label
+                  >
+                  <label for="others" class="radio-inline"
+                    ><input
+                      type="radio"
+                      name="insh"
+                      value="mass"
+                      id="mas"
+                    /> &nbsp;  &nbsp; ضمان ماسي</label
+                  >
+                </div>
+
+              </div>
+
+        <div class="form-group">
+
+                <label for="image_F"> صورة الفاتورة:</label>
+
+                <input type="file" name="image_F" Required>
+              </div>
+        <div class="form-group">
+
+                <label for="image_Bef"> صورة الجوال قبل التركيب:</label>
+
+                <input type="file" name="image_Bef" >
+              </div>
+
+                      <div class="form-group">
+
+                <label for="image_aft"> صورة الجوال بعد التركيب:</label>
+
+                <input type="file" name="image_aft" >
+              </div>
+
+
+        <input type="submit" name="submit" value="Upload">
+
+
+
+
+
+          
+
+
+
+</form>
+
+
+
+
+<?php mysqli_close($db);  // close connection ?>
+</div>
+      
+        </div>
+      </div>
+    </div>
+
+
+</body>
+</html>
