@@ -79,6 +79,7 @@ font-display: swap;
   cursor: pointer;
 
   font-size: 17px;
+  border-bottom: solid .5px #E5E5E5;
 }
 
 /* Change background color of buttons on hover */
@@ -106,6 +107,22 @@ color: black;
  padding: 1px;
 color:black;
 }
+  
+  
+  .arrow {
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+  float: left;
+opacity: 0.4;
+
+}
+.down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
 </style>
 </head>
 <body dir="rtl">
@@ -122,7 +139,7 @@ color:black;
 
 <div class="tab">
   
-  <button class="tablinks" onclick="openCity(event, 'contact')">من نحن<i class="fa fa-chevron-down" style="font-size:16px;float= left;  "></i></button>
+  <button class="tablinks" onclick="openCity(event, 'contact')">من نحن<i class="arrow down"></i></button>
   <div id="contact" class="tabcontent">
     <h2>سميكولن</h2>
   <p> نوفر خدمة تطوير مواقع المنيو الالكتروني <br>
@@ -130,7 +147,7 @@ color:black;
 </div>
   
   
-  <button class="tablinks" onclick="openCity(event, 'London')" >الباقات</button>
+  <button class="tablinks" onclick="openCity(event, 'London')" >الباقات <i class="arrow down"></i></button>
   <div id="London" class="tabcontent">
 
   <div class="header3">
@@ -161,7 +178,7 @@ color:black;
     </div><!--close card-->
 </div>
 
- <button class="tablinks" onclick="openCity(event, 'Tokyo')" id="defaultOpen">عملاءنا</button>
+ <button class="tablinks" onclick="openCity(event, 'Tokyo')" id="defaultOpen">عملاءنا <i class="arrow down"></i></button>
   
   <div id="Tokyo" class="tabcontent">
 <br>
