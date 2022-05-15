@@ -18,7 +18,12 @@ img{
 
    width: 100%; 
 }
+.header2{
+  margin: 0 auto;
 
+  width: 100px;
+   border-radius: 50%;
+}
 .header4{
   margin: 0 auto;
 
@@ -129,6 +134,7 @@ section .container {
     opacity: 1;
   }
 }
+
 /* Style the counter cards */
 
 
@@ -143,7 +149,7 @@ text-align:center;
 .wrapper{
   display:inline-flex;
     text-align:center;
-     justify-content:center;
+      justify-content:center;
 }
 
 .wrapper .icon{
@@ -171,6 +177,3 @@ padding:5px;
  padding: 1px;
 color:#5d473e;
 }
-
-
-
