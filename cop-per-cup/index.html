@@ -138,36 +138,55 @@
 <div class="container" >
 
    <h5 class="card-tit2">قهوة مقطرة</h5><br>
-  <div class="card" onclick="gofor(this.id)" id="kin">
+    
+        <div class="card product">
+     <a class="popup-btn" style="text-decoration : none"> <div class="row no-gutters ">
+            <div class="col-4 ">
+                       <picture>
 
-        <div class="row no-gutters">
-            <div class="col-3 scal3">
-          	               <picture >
   <source srcset="images/drip/kinto.webp" type="image/webp">
   <source srcset="images/drip/kinto.jp2" type="image/jp2" > 
   <img src="images/drip/kinto.jpg" alt=""class="img-fluid lazy" alt="" loading="lazy">
 </picture>
+          
             </div>
 
-            <div class="col">
-                <div class="card-block px-3">
+            <div class="col ">
+                <div class="card-block px-3 ">
                     <h5 class="card-title">كينتو</h5>
-
-                   <div id="textbox">
-                     <p class="alignleft"><i class="flaticon-calorie"></i>0.07</p><p class ="right" >SR</p>
+           
+                  <div id="textbox">
+                     <p class="alignleft">0.07</p>
+                      <p class ="right" >SR</p>
                      <p class="alignright">15.00</p>
-                         </div> 
+   </div> </div> </div></div></a>
 
+  <a><i class=" close-btn"> <div class="popup-view">
+          <div class="popup-card">
+          
 
-             </div><!--close block-->
-            </div><!--close col-->
-        </div><!--close row-->
+            <div class="product-img" >
 
-    </div><!--close card-->
+  <source srcset="images/drip/kinto.webp" type="image/webp">
+  <source srcset="images/drip/kinto.jp2" type="image/jp2" > 
+  <img src="images/drip/kinto.jpg" alt=""class="img-fluid lazy" alt="" loading="lazy">
 
+            </div>
+            <div class="info">
+                  <br> <br>
+              <h2>
+                    <h5 class="card-title">كينتو<br></h2>
+               <p>من الأرض الخضراء الممتدة كولومبيا ومن أواسط إقليمها الفسيح کاوكا كان هذا المحصول الكلاسيكي هو محط أنظارنا. فدخل بهیبته محامصنا.. وخرج منها فريداً في مقامه. ان تناولته في كوبر كب فأنت في المكان الذي يليق بك </p><br>
+              <span class="price">15 SR</span>
+              <span class="price">0.07</span>
+            </div>
+          </div>  
+        </div> </i></a>
 
+    </div>
 
-  <br>
+    <br>   
+   
 
 
  <div class="card " id="vi" onclick="gofor(this.id)">
@@ -960,38 +979,56 @@
     </div> <!--close card-->
 
   <br>
- <div class="card " id="to" onclick="gofor(this.id)">
+    
+            <div class="card product">
+     <a class="popup-btn" style="text-decoration : none"> <div class="row no-gutters ">
+            <div class="col-4 ">
+                       <picture>
 
-       
-        <div class="row no-gutters ">
-
-            <div class="col-3">
-            	 <picture>
   <source srcset="images/ches/tot.webp" type="image/webp">
   <source srcset="images/ches/tot.jp2" type="image/jp2"> 
   <img src="images/ches/tot.jpg" alt="" class="img-fluid lazy" alt="" loading="lazy">
 </picture>
-   
+          
             </div>
 
-            <div class="col">
-                <div class="card-block px-3">
+            <div class="col ">
+                <div class="card-block px-3 ">
                     <h5 class="card-title">تشيزكيك توت أزرق</h5>
            
                   <div id="textbox">
-                     <p class="alignleft"><i class="flaticon-calorie"></i>321</p><p class ="right" >SR</p>
+                     <p class="alignleft">321</p>
+                      <p class ="right" >SR</p>
                      <p class="alignright">18.00</p>
-                         </div>
+   </div> </div> </div></div></a>
 
-                </div> <!--close block-->
+  <a><i class=" close-btn"> <div class="popup-view">
+          <div class="popup-card">
+          
 
-            </div> <!--close col-->
+            <div class="product-img" >
+  <source srcset="images/ches/tot.webp" type="image/webp">
+  <source srcset="images/ches/tot.jp2" type="image/jp2"> 
+  <img src="images/ches/tot.jpg" alt="" class="img-fluid lazy" alt="" loading="lazy">
 
-        </div><!--close row-->
+            </div>
+            <div class="info">
+                  <br> <br>
+              <h2>
+                    <h5 class="card-title">تشيزكيك توت أزرق<br></h2>
+               <p>بيض مخفوق - كلاسيك صوص - جبنة امريكية - جرجير |
+Scramble egg - sauce classic - American cheese - rocca </p><br>
+              <span class="price">18 SR</span>
+              <span class="price">321</span>
+            </div>
+          </div>  
+        </div> </i></a>
 
-    </div> <!--close card-->
+    </div>
 
-  <br>
+    <br>
+    
+ 
  <div class="card " id="lo" onclick="gofor(this.id)">
 
     
@@ -1692,6 +1729,32 @@
 </footer>
 
  </div>
+
+  <script type="text/javascript">
+    var popupViews = document.querySelectorAll('.popup-view');
+    var popupBtns = document.querySelectorAll('.popup-btn');
+    var closeBtns = document.querySelectorAll('.close-btn');
+
+    //javascript for quick view button
+    var popup = function(popupClick){
+      popupViews[popupClick].classList.add('active');
+    }
+
+    popupBtns.forEach((popupBtn, i) => {
+      popupBtn.addEventListener("click", () => {
+        popup(i);
+      });
+    });
+
+    //javascript for close button
+    closeBtns.forEach((closeBtn) => {
+      closeBtn.addEventListener("click", () => {
+        popupViews.forEach((popupView) => {
+          popupView.classList.remove('active');
+        });
+      });
+    });
+    </script>
 </body>
  </html>
 
